@@ -3,7 +3,8 @@
   :author ""
   :license ""
   :depends-on ("dexador"
-               "jonathan")
+               "jonathan"
+               "rove")
   :components ((:module "src"
                 :components
                 ((:file "main"))))
