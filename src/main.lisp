@@ -1,6 +1,7 @@
 (defpackage #:yubin
   (:use #:cl)
   (:import-from #:jonathan #:parse)
+  (:import-from #:dexador)
   (:export #:get-place))
 (in-package #:yubin)
 
@@ -14,9 +15,8 @@
                     (getf result :|address1|)
                     (getf result :|address2|)
                     (getf result :|address3|))
-        (error (format nil "~A: ~S (Code=~A)"
+        (error (format nil "~A: ~S"
                        (getf response :|message|)
-                       zipcode
-                       (getf response :|status|))))))
+                       zipcode)))))
 
 ;; blah blah blah.
