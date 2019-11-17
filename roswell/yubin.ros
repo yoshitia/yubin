@@ -16,6 +16,6 @@ exec ros -Q -- $0 "$@"
   (handler-case
       (format t "~&~A~%" (yubin:get-place zipcode))
     (error (e)
-      (format *standard-output* "~&Error: ~A~% e")
+      (format *standard-output* "~&Error: ~A~%" e)
       (uiop:quit -1))))
 ;;; vim: set ft=lisp lisp:
