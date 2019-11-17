@@ -1,7 +1,7 @@
 (defpackage #:yubin
   (:use #:cl)
   (:import-from #:jonathan #:parse)
-  (:import-from #:dexador)
+  (:import-from #:dexador #:dex)
   (:export #:get-place))
 (in-package #:yubin)
 
