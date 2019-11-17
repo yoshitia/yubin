@@ -1,8 +1,8 @@
-(defpackage yubin
-  (:use :cl)
+(defpackage #:yubin
+  (:use #:cl)
   (:import-from #:jonathan #:parse)
   (:export #:get-place))
-(in-package :yubin)
+(in-package #:yubin)
 
 (defun get-place (zipcode)
   (let* ((url (quri:make-uri :defaults "http://zipcloud.ibsnet.co.jp/api/search"
