@@ -10,7 +10,7 @@
          (response (parse (dex:get url)))                       ; HTTPリクエストを行う
          (result (first (getf response :|results|))))
     (if result
-        (concatnate 'string
+        (concatenate 'string
                     (getf result :|address1|)
                     (getf result :|address2|)
                     (getf result :|address3|))
